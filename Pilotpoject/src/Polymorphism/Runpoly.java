@@ -2,7 +2,7 @@ package Polymorphism;
 
 public class Runpoly {
 	public static void main(String[] args) {
-		Flowers o= new Bees();
+		Flowers o= new Bees(); ///Run time Polymorphism
 		o.gen();
 	}
 }
@@ -13,6 +13,7 @@ class Flowers {
 	}
 }
 class Bees extends Flowers{
+	//method Overridding
 	void gen() {
 		System.out.println("We gen honey");
 	}

@@ -40,13 +40,13 @@ class Car{
 		void monitor() {
 			System.out.println("Oberservation started-_-");
 			
-			class Visionangels{
-				int degrees;
-				void degree() {
-					System.out.println("Adjusting the camera...");
-				}
-			}
-			Visionangles vision =new Visionangles();
+//			class Visionangels{
+//				int degrees;
+//				void degree() {
+//					System.out.println("Adjusting the camera...");
+//				}
+//			}
+//			Visionangles vision =new Visionangles();
 			
 		}
 	}

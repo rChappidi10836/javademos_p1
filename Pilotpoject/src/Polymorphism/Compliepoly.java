@@ -1,5 +1,8 @@
 package Polymorphism;
 
+
+//Complie Time Polymorphism
+
 public class Compliepoly {
 	public static void main(String[] args) {
 		A o = new A();
@@ -10,6 +13,7 @@ public class Compliepoly {
 }
 
 class A {
+	//method Overloading
 	void you(String s) {
 		System.out.println("Your name lenght is "+s.length());
 	}
