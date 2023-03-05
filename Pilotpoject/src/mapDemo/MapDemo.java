@@ -14,7 +14,7 @@ public class MapDemo {
 		marks.put("Gon", 53);
 		marks.put("Ben", 80);
 		marks.put("Gwen", 69);
-		marks.put("Gon", 55);
+		marks.put(null, 55);
 		System.out.println(marks);
 		
 		System.out.println(marks.keySet());

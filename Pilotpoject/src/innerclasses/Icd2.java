@@ -7,6 +7,8 @@ public class Icd2 {
 		
 		Car.VisualDetectionSys s= car.new VisualDetectionSys(16);
 		s.displayfea();
+		
+		s.monitor();
 	}
 }
 
@@ -31,6 +33,7 @@ class Car{
 			this.noofcams=num;
 		}
 		
+		//accessing outer class private variable in inner class
 		void displayfea() {
 			System.out.println("car model : "+Car.model);
 			System.out.println("The car colour : "+Car.this.colour);
@@ -40,13 +43,14 @@ class Car{
 		void monitor() {
 			System.out.println("Oberservation started-_-");
 			
-//			class Visionangels{
-//				int degrees;
-//				void degree() {
-//					System.out.println("Adjusting the camera...");
-//				}
-//			}
-//			Visionangles vision =new Visionangles();
+			class Visionangles {
+				int degrees;
+				void degree() {
+					System.out.println("Adjusting need the camera..."+degrees+" degrees");
+				}
+			}
+			Visionangles vision =new Visionangles();
+			vision.degree();
 			
 		}
 	}

@@ -1,6 +1,5 @@
 package exceptionhandling;
 
-import java.lang.invoke.StringConcatException;
 import java.util.Scanner;
 
 public class Exceptiondemo {
@@ -44,6 +43,7 @@ public class Exceptiondemo {
 		System.out.println("enter 2nd number...:");
 		b = scanner.nextInt();
 		System.out.println("b=" + b);
+		scanner.close();
 		try {
 			c = a / b;
 			d = a % b;

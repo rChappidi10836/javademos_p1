@@ -6,7 +6,7 @@ import java.io.FileNotFoundException;
 public class Multicatch {
 	
 	public static void main(String[] args) {
-		//MulticatchDemo();
+		MulticatchDemo();
 		
 		try {
 			checkedExceptionDemo();
@@ -37,7 +37,7 @@ public class Multicatch {
 	}
 	
 	private static void checkedExceptionDemo() throws FileNotFoundException {
-		FileInputStream fis = new FileInputStream("\\Users\\rchappidi\\sample.txt");
+		FileInputStream fis = new FileInputStream("C:\\Users\\rchappidi\\supfiles\\sample.txt");
 	}
 
 }
