@@ -100,11 +100,11 @@ class Employee implements Comparable<Employee>{
 	public int compareTo(Employee o) {
 //		return this.id < o.id ? -1 :this.id > o.id ? 1:0;//reorder on ID
 		
-		int tl=this.name.length();
-		int ol=o.name.length();
-		return tl < ol? -1 : tl >ol ? 1 : this.name.compareTo(o.name);//reorder by Name Length
+//		int tl=this.name.length();
+//		int ol=o.name.length();
+//		return tl < ol? -1 : tl >ol ? 1 : this.name.compareTo(o.name);//reorder by Name Length
 		
-//		return this.name.compareTo(o.name);//reorder by Natural Order
+		return this.name.compareTo(o.name);//reorder by Natural Order
 		
 	}
 }
