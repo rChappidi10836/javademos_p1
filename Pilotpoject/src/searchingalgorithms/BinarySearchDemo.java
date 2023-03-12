@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class BinarySearchDemo {
 
 	public static void main(String[] args) {
-		int searchItem = 69;
+		int searchItem = 60;
 		int[] arr = { 23, 51, 13, 64, 48, 84, 12, 69 };
 
 		System.out.println("Before sort :" + Arrays.toString(arr));
@@ -29,6 +29,8 @@ public class BinarySearchDemo {
 		int lastIndex = arr.length - 1;
 		int middleIndex = (firstIndex + lastIndex) / 2;
 
+		for(int i=0;i<10;i++);
+		
 		while (firstIndex <= lastIndex) {
 			if (searchItem > arr[middleIndex]) {
 				firstIndex = middleIndex + 1;
@@ -40,7 +42,7 @@ public class BinarySearchDemo {
 			middleIndex = (firstIndex + lastIndex) / 2;
 		}
 
-		return 0;
+		return -1;
 	}
 
 }

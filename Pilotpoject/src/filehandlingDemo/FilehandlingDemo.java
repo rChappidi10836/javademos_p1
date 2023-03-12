@@ -11,23 +11,25 @@ import java.io.IOException;
 
 public class FilehandlingDemo {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 
-//		fileInputStreamDemo();
+		fileInputStreamDemo();
 
 //		fileOutputStreamDemo();
 
 //		fileReaderDemo();
 
-//		fileWriterDemo();
+		fileWriterDemo();
 
-		bufferReaderDemo();
+//		bufferReaderDemo();
 
 	}
 
-	static void fileInputStreamDemo() {
+	static void fileInputStreamDemo() throws IOException {
 		int i;
-		File myfile = new File("C:\\Users\\rchappidi\\sample.txt");
+//		boolean d;
+		File myfile = new File("C:\\Users\\rchappidi\\sample1.txt");
+		myfile.createNewFile();
 		try {
 			FileInputStream fis = new FileInputStream(myfile);
 			System.out.println("File Opened");
@@ -46,8 +48,15 @@ public class FilehandlingDemo {
 
 	}
 
-	static void fileOutputStreamDemo() {
-		File wefile = new File("C:\\Users\\rchappidi\\sample.txt");
+	static void fileOutputStreamDemo() throws IOException {
+		File wefile = new File("C:\\Users\\rchappidi\\newfile.txt");
+		
+		if(wefile.createNewFile()) {
+			System.out.println("file created");
+		}
+		else {
+			System.out.println("file not created");
+		}
 		try {
 			FileOutputStream fos = new FileOutputStream(wefile);
 			System.out.println("File Opened");

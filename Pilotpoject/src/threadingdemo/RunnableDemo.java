@@ -18,11 +18,11 @@ public class RunnableDemo {
 		});
 		t1.start();
 		
-//		try {
-//			t1.join();
-//		} catch (InterruptedException e) {
-//			e.printStackTrace();
-//		}
+		try {
+			t1.join();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		Utils.printmessage("End main");
 		
 	}

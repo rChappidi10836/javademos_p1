@@ -6,10 +6,10 @@ public class Boxunbox {
 		
 	
 	// wapper types
-	int z=20;
+	int z=20;  //Boxing
 	Integer k=10;
 	
-	Integer k1=new Integer(20);
+	Integer k1=new Integer(20); //Unboxing
 	int p=k1;
 	
 	System.out.println(z+" "+k+" "+k1+" "+p);

@@ -28,11 +28,11 @@ public class FunctionalProgrammingDemo {
 		System.out.println("Calculate " + x + " / " + y + " = " + divider.calculate(x, y));
 		
 		
-//		sum sum = (a,b) -> System.out.println("Sum is "+(a+b));
-//		sum.sum(x, y);
+		sum sum = (a,b) ->{ System.out.println("Sum is "+(a+b));};
+		sum.sum(x, y);
 		
-		sum sum = (a,b) ->{ return a+b;};
-		System.out.println(sum.sum(20,30));
+//		sum sum = (a,b) ->{ return a+b;};
+//		System.out.println(sum.sum(20,30));
 		
 	}
 }
@@ -52,5 +52,5 @@ class Calculator implements ICalculator {
 
 }
 interface sum{
-	int sum(int x, int y);
+	void sum(int x, int y);
 }

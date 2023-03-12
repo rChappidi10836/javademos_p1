@@ -71,6 +71,7 @@ class StringComparator implements Comparator<String>{
 		}else if(l1>l2) {
 			return 1;
 		}else {
+//			return 0;
 		return str1.compareTo(str2);//return 0; then Treeset will think 0 as Indication of Duplicate
 		}
 	}
