@@ -8,7 +8,8 @@ public class Origin {
 
 	public static void main(String[] args) {
 
-		System.out.println("			LockedME			");
+		System.out.println("			 LockedME			 ");
+		System.out.println("\t\t\t\t-- By C.Raja EMPID: 10836"); 	 	 
 		Set<String> Files = new TreeSet<String>();
 
 		Files.add("Details.pdf");
@@ -69,8 +70,10 @@ public class Origin {
 					} catch (Exception e1) {
 						e1.getMessage();
 					}
-					Files.add(s);
+					if(Files.add(s))
 					System.out.println(s + " file is added");
+					else
+					System.out.println(s + " is already present in directory");
 					break;
 				case 2:							//delete file
 					System.out.print("Enter File with extention to delete : ");
